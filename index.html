@@ -31,7 +31,7 @@
             <a class="main-nav-link" href="#testimonials">Testimonials</a>
           </li>
           <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">Try For Free</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Try For Free</a></li>
         </ul>
       </nav>
     </header>
@@ -431,7 +431,60 @@
           </div>
         </div>
       </section>
-      <section class="section-cta"></section>
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-contents">
+              <h2 class="heading-secondary cta-heading">
+                Get your first meal for free!
+              </h2>
+              <p class="cta-text">
+                Healthy, tasty and hassle-free meals are waiting for you. Start
+                eating well today. You can cancel or pause anytime. And the
+                first meal is on us!
+              </p>
+              <form class="cta-form" name="sign-up">
+                <div>
+                  <label for="full-name">Full Name</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="John Smith"
+                    name="full-name"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="e-mail">Email address</label>
+                  <input
+                    id="e-mail"
+                    type="email"
+                    placeholder="me@example.com"
+                    name="e-mail"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="where">Where did you hear from us</label>
+                  <select name="where" id="where" required>
+                    <option value="">please choose one option:</option>
+                    <option value="friends">Friends and family</option>
+                    <option value="youtube">YouTube video</option>
+                    <option value="podcast">Podcast</option>
+                    <option value="ad">Facebook ad</option>
+                    <option value="others">Others</option>
+                  </select>
+                </div>
+
+                <button class="btn btn--form">Sign up now</button>
+              </form>
+            </div>
+            <div class="cta-img" role="img" aria-label="cta image"></div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script
