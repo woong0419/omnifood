@@ -256,14 +256,16 @@
   margin-bottom: 3.2rem;
 }
 
-.meal-attributes {
+.meal-attributes,
+.plan-attributes {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.meal-attribute {
+.meal-attribute,
+.plan-attribute {
   font-size: 1.8rem;
   display: flex;
   align-items: center;
@@ -294,7 +296,8 @@
   gap: 1.6rem;
 }
 
-.diet ion-icon {
+.diet ion-icon,
+.plan-attribute ion-icon {
   width: 3rem;
   height: 3rem;
   color: #e67e22;
@@ -373,4 +376,123 @@
 
 .gallery-item img:hover {
   transform: scale(1.1);
+}
+
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.pricing-plans {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.plan {
+  border-radius: 11px;
+  width: 75%;
+}
+
+.starter {
+  border: 2px solid #fdf2e9;
+  padding: 4.6rem;
+  justify-self: end;
+}
+
+.complete {
+  background-color: #fdf2e9;
+  padding: 4.6rem;
+  overflow: hidden;
+  position: relative;
+  justify-self: start;
+}
+
+.complete::after {
+  content: "best value";
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+  top: 6%;
+  right: -18%;
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.plan-name {
+  color: #cf711f;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+.plan-detail {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  text-align: center;
+  margin-top: 5.4rem;
+  margin-bottom: 8.6rem;
+}
+
+.plan-signup {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.feature-icon {
+  color: #e67e22;
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: #fdf2e9;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
 }
