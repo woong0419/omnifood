@@ -14,7 +14,7 @@
 
 .main-nav-list {
   display: flex;
-  gap: 3.2rem;
+  gap: 4.8rem;
   list-style: none;
   align-items: center;
 }
@@ -26,6 +26,8 @@
   font-weight: bold;
   font-size: 1.8rem;
   transition: all 0.3s;
+
+  display: inline-block;
 }
 
 .main-nav-link:hover,
@@ -39,6 +41,8 @@
   background-color: #e67e22;
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
+
+  display: inline-block;
 }
 
 .main-nav-link.nav-cta:hover,
@@ -49,6 +53,41 @@
 .section-hero {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
+}
+
+.btn-mobile {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.btn-mobile-icon {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.btn-mobile-icon[name="close-outline"] {
+  display: none;
+}
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #fff;
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
 }
 
 .hero {
@@ -457,7 +496,7 @@
 
 .plan-details {
   font-size: 1.6rem;
-  line-height: 1.6rem;
+  line-height: 1.2rem;
   text-align: center;
   margin-top: 5.4rem;
   margin-bottom: 8.6rem;
@@ -506,7 +545,7 @@
   grid-template-columns: 2fr 1fr;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
-
+  overflow: hidden;
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
 }
 
